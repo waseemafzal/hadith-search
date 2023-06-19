@@ -12,6 +12,8 @@ define('TRUE', true);
 define('FALSE', false);
 
 $parameters = parse_ini_file(__DIR__ ."/../../.env.local");
+//print_r($parameters);exit;
+
 if (array_key_exists("showCarousel", $parameters)) {
     $params['showCarousel'] = $parameters['showCarousel'];
 }
